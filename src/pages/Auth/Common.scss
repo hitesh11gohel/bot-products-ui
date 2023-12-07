@@ -1,0 +1,14 @@
+.errors {
+  color: red;
+  font-size: 13px;
+}
+
+.input-field {
+  border: 1px solid red !important;
+}
+
+@media only screen and (max-width: 320px) {
+  .form-container {
+    padding: 0 1.5rem;
+  }
+}
