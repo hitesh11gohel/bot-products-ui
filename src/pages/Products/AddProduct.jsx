@@ -92,7 +92,11 @@ const AddProduct = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Flex h={"86.5vh"} alignItems="center" justifyContent="center">
+      <Flex
+        h={"calc(100vh - 112px)"}
+        alignItems="center"
+        justifyContent="center"
+      >
         <Flex
           width={{ lg: "500px" }}
           flexDirection="column"

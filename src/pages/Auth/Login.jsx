@@ -60,7 +60,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form-container">
-      <Flex h="97vh" alignItems="center" justifyContent="center">
+      <Flex h="calc(100vh - 50px)" alignItems="center" justifyContent="center">
         <Flex
           width={{ lg: "500px" }}
           flexDirection="column"
@@ -86,6 +86,7 @@ const Login = () => {
               />
               <Input
                 name="email"
+                disabled={loading}
                 placeholder="test@gmail.com"
                 type="email"
                 variant="filled"
@@ -110,6 +111,7 @@ const Login = () => {
               />
               <Input
                 name="password"
+                disabled={loading}
                 placeholder="**********"
                 type={isEnablePassword ? "password" : "text"}
                 variant="filled"

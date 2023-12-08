@@ -70,7 +70,7 @@ const Registration = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Flex h="97vh" alignItems="center" justifyContent="center">
+      <Flex h="calc(100vh - 50px)" alignItems="center" justifyContent="center">
         <Flex
           width={{ lg: "500px" }}
           flexDirection="column"
@@ -300,12 +300,6 @@ const Registration = () => {
             Have an account ?{" "}
             <Link color="teal.500" as={ReactRouterLink} to="/signin">
               Log in
-            </Link>
-          </Text>
-
-          <Text textAlign={"center"} fontSize={"sm"}>
-            <Link color="teal.500" as={ReactRouterLink} to="/">
-              Back to Dashboard
             </Link>
           </Text>
         </Flex>

@@ -51,7 +51,7 @@ const ProductDetails = () => {
 
   return (
     <Center>
-      <Box h={{ base: "auto" }} minH={"86vh"} w={"90vw"} mb={6}>
+      <Box h={{ base: "auto" }} minH={"calc(100vh - 138px)"} w={"90vw"} mb={6}>
         <PageActions {...product} />
         <Card
           direction={{ base: "column", sm: "row" }}

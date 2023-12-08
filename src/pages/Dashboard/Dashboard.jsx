@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
-import Products from "../Products";
+import ProductList from "../Products";
 
 const Dashboard = () => {
   return (
-    <Box h={"86vh"} overflowY={"scroll"} className="scrollbar">
-      <Products />
+    <Box h={"calc(100vh - 112px)"} overflowY={"scroll"} className="scrollbar">
+      <ProductList />
     </Box>
   );
 };

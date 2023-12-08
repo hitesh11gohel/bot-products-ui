@@ -8,10 +8,13 @@ const useProductService = () => {
     "x-access-token": user?.token ?? "",
   };
 
-  const getAllProducts = async () => {
+  const getAllProducts = async (withQueryParams = false, operation, value) => {
+    const query = withQueryParams
+      ? `${BASE_URL}/api/products/get-all?${operation}=${value}`
+      : `${BASE_URL}/api/products/get-all`;
     try {
       const products = await Axios({
-        url: `${BASE_URL}/api/products/get-all`,
+        url: query,
         method: "GET",
         headers: headerObj,
       });

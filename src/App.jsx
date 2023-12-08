@@ -7,7 +7,6 @@ import Register from "./pages/Auth/Register";
 import Footer from "./components/Footer";
 import Protected from "./pages/Auth/Protected";
 import NotFound from "./pages/NotFound/NotFound";
-import UserTable from "./components/UserTable";
 import ProductDetails from "./pages/Products/ProductDetails";
 import AddProduct from "./pages/Products/AddProduct";
 
@@ -22,7 +21,6 @@ function App() {
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Protected Component={Dashboard} />} />
-        <Route path="/users" element={<Protected Component={UserTable} />} />
         <Route
           path="/products/:productId"
           element={<Protected Component={ProductDetails} />}
